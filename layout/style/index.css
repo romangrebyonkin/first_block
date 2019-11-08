@@ -7,12 +7,14 @@
 body {
     background: #000000;
 }
+.main {
+    padding: 100px 0;
+}
 .container {
-    max-width: 1400px;
-    height: 592px;
     background: #ffffff;
+    max-width: 1150px;
     margin: auto;
-    padding: 107px 143px;
+    padding: 0 15px;
     text-align: center;
     box-sizing: border-box;
     font-size: 0px;
