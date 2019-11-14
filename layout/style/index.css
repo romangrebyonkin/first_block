@@ -23,6 +23,7 @@ body {
 
 .inner,.price {
     display: flex;
+    justify-content: space-around;
 }
 
 .info {
@@ -56,24 +57,16 @@ p {
     color: #86878b;
 }
 
-.content:nth-child(2) {
-    margin-left: 32px;
-    margin-right: 32px;
-}
-
 /* Second block */
 .container-price {
     background: #f5f5f5;
+    padding: 0 80px;
 }
 
 table {
     width: 33.3%;
     border-spacing: 0px;
-}
-
-table:nth-child(2) {
-    margin-left: 40px;
-    margin-right: 40px;
+    padding: 20px;
 }
 
 tr:nth-child(1) td {
