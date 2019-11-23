@@ -5,10 +5,11 @@
     padding: 0;
 }
 body {
-    background: #000000;
+    background: #949494;
 }
+
 .main {
-    padding: 100px 0;
+    padding: 100px 0px;
 }
 
 .container {
@@ -21,7 +22,7 @@ body {
     font-size: 0px;
 }
 
-.inner,.price {
+.inner,.price,.coments,.avatars {
     display: flex;
     justify-content: space-between;
 }
@@ -36,7 +37,8 @@ h1 {
     font-weight: lighter;
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
+    position: relative;
 }
 
 h2 {
@@ -136,4 +138,147 @@ span {
 .letter {
     vertical-align: bottom;
 }
+/* 3 block */
+
+
+.tester {
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    width: 64px;
+    height: 2px;
+    background: #ff8b38;
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    margin-left: -32px;
+}
+
+
+/*3 й блок*/
+.coments {
+    margin-bottom: 23px;
+}
+
+.coments .inner {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    background: #f5f5f5;
+    width: 25%;
+    font-size: 14px;
+    padding: 25px 10px;
+    text-align: left;
+    border-radius: 5px;
+    position: relative;
+}
+
+.coments .inner::after {
+    content: '';
+    background-image: url('../icons/polygon.svg');
+    position: absolute;
+    bottom: -14px;
+    left: 25px;
+    height: 15px;
+    width: 20px;
+}
+
+.info_customer {
+    margin-bottom: 55px;
+}
+
+.avatars .inner {
+    width: 27%;
+    position: relative;
+}
+
+.position {
+    position: absolute;
+    left: 90px;
+    top: 20px;
+    text-align: left;
+}
+
+.name {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    line-height: 18px;
+    color: #333333;
+}
+
+/* 4 й блок */
+
+.container_axure {
+    background-image: url(../icons/background.png);
+    background-repeat: no-repeat;
+    background-size: auto 320px;
+    height: 320px;
+}
+
+.main_axure {
+    padding: 75px 0px 0px 0px;
+}
+
+.main_axure h1  {
+    color: #ffffff;
+    margin-bottom: 60px;
+}
+
+.main_axure h1::after {
+    background: #ffffff;
+}
+
+.main_axure p {
+    color: #bdbbb7;
+    margin-bottom: 45px;
+}
+
+.main_axure a {
+    border: 2px solid #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px 30px;
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+}
+
+a::before {
+    content: '';
+    height: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    background: #ff8b38;
+    z-index: -1;
+}
+
+a:hover:before {
+    width: 126px;
+    height: 40px;
+    transition: all .4s ease-in-out;
+}
+
+a:hover {
+    border: none;
+}
+
+
+
+
+
+/* footer */
+
+.footer {
+    max-width: 1200px;
+    height: 100px;
+    background: #000000;
+    margin: auto;
+}
+
+
 
